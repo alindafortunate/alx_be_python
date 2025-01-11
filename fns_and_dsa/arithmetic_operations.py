@@ -8,6 +8,6 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
     elif operation == "divide":
         try:
-            return num1 // num2
+            return num1 / num2
         except ZeroDivisionError:
             print("You are dividing by zero which is impossible, try another number.")
