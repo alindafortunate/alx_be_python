@@ -17,7 +17,7 @@ class BankAccount:
 
         elif self._account_balance > amount:
 
-            print(f"Withdrew:${amount}")
+            print(f"Withdrew:${amount:.1f}")
 
     def display_balance(self):
 
