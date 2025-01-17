@@ -20,7 +20,7 @@ class BankAccount:
 
     def display_balance(self):
 
-        return f"Current balance is:${self.initial_balance}"
+        return f"Current Balance:${self.initial_balance}"
 
 
 if __name__ == "__main__":
