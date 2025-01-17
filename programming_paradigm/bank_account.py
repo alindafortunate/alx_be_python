@@ -19,7 +19,7 @@ class BankAccount:
 
         self._account_balance -= amount
         # return True
-        # return f"Withdrew:${amount}"
+        return f"Withdrew:${amount}"
 
     def display_balance(self):
 
