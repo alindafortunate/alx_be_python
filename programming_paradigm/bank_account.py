@@ -1,26 +1,26 @@
 class BankAccount:
-    def __init__(self, account_balance, initial_balance=0):
+    def __init__(self, account_balance: float, initial_balance=0):
         self._account_balance = account_balance
         self.initial_balance = initial_balance
 
-    def deposit(self, amount):
-        self.amount = amount
-        balance = self.amount + self._account_balance
-        self.initial_balance = balance
-        return f"{self.initial_balance}"
+    def deposit(self, amount: float):
 
-    def withdraw(self, amount):
-        self.amount = amount
-        if self._account_balance > self.amount:
-            balance = self._account_balance - self.amount
-            self.initial_balance = balance
-            return f"{self.initial_balance}"
+        self._account_balance += amount
+
+        return f"{self._account_balance}"
+
+    def withdraw(self, amount: float):
+
+        if self._account_balance > amount:
+            self._account_balance -= amount
+
+            return f"{self._account_balance}"
         else:
             return f"Insufficient balance"
 
     def display_balance(self):
 
-        return f"Current Balance:${self.initial_balance}"
+        return f"Current Balance:${self._account_balance}"
 
 
 if __name__ == "__main__":
