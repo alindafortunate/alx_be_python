@@ -23,9 +23,21 @@ class BankAccount:
         return f"Current Balance:${self._account_balance}"
 
 
-if __name__ == "__main__":
 
-    account = BankAccount(100)
-    print(account.deposit(100))
-    print(account.withdraw(60))
-    print(account.display_balance())
+
+
+
+
+
+
+
+
+
+
+
+# if __name__ == "__main__":
+
+#     account = BankAccount(100)
+#     print(account.deposit(100))
+#     print(account.withdraw(60))
+#     print(account.display_balance())
