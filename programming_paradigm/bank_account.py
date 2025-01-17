@@ -1,5 +1,5 @@
 class BankAccount:
-    def __init__(self, account_balance: float, initial_balance=0):
+    def __init__(self, account_balance, initial_balance=0):
         self._account_balance = account_balance
         self.initial_balance = initial_balance
 
