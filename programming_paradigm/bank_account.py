@@ -4,10 +4,8 @@ class BankAccount:
         self.initial_balance = initial_balance
 
     def deposit(self, amount):
-        if amount > 0:
-            self._account_balance += amount
-        else:
-            print("Deposit should be positive.")
+
+        self._account_balance += amount
 
     def withdraw(self, amount):
 
